@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dev Club | Portfolio </title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="./Estevao 1.jpeg" alt="Foto de Estevao" class="foto-perfil">
+        <h1>Estevão Rodrigues Uroz</h1>
+        <p class="cabecalho-sub-titulo">Em formação em TI | Automação de processos e foco em soluções práticas</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo"> Sobre mim </h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is
+                pain..."
+            </p>
+        </div>
+    </section>
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo"> Meus Projetos </h2>
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <img src="./img/projeto1.png" alt="Projeto 1" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Loja de Carros</h3>
+                    <p class="paragrafo-projetos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nulla euismod, nisl eget aliquam ultricies
+                        , nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/projeto2.png" alt="Projeto 2" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Página de Viagens</h3>
+                    <p class="paragrafo-projetos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nulla euismod, nisl eget aliquam ultricies
+                        , nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/projeto3.png" alt="Projeto 3" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Microsoft</h3>
+                    <p class="paragrafo-projetos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nulla euismod, nisl eget aliquam ultricies
+                        , nunc nisl aliquet nunc, vitae aliquam nisl nunc vitae nisl.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="contatos" class="contatos">
+
+        <h2 class="contatos-titulo"> Entre em Contato </h2>
+
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar Whatsapp</button>
+        </form>
+    </section>
+
+    <script>
+        function enviarWhats(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById("nome").value;
+            const mensagem = document.getElementById("mensagem").value;
+            const telefone = '5599999999999'; // número fictício para demonstração
+
+             if (!nome || !mensagem) {
+            alert("Por favor, preencha todos os campos.");
+            return;
+            }
+
+            const texto = `Olá, Me chamo ${nome}. ${mensagem}`;
+            const mensagemFormatada = encodeURIComponent(texto);
+
+            const url = `https://wa.me/${telefone}?text=${mensagemFormatada}`;
+
+            console.log(url);
+
+            window.open(url, '_blank');
+        }
+
+        
+
+    </script>
+    
+
+</body>
+
+
+
+</html>
