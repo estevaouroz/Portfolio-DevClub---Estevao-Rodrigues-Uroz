@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dev Club | Portfolio </title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="./Estevao 1.jpeg" alt="Foto de Estevao" class="foto-perfil">
+        <h1>Estevão Rodrigues Uroz</h1>
+        <p class="cabecalho-sub-titulo">Em formação em TI | HTML, CSS, JavaScript, React | Sites funcionais e automações simples</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo"> Sobre mim </h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Estudante de Análise e Desenvolvimento de Sistemas com foco em desenvolvimento Front-End, utilizando
+                tecnologias como HTML, CSS, JavaScript e React. Busco uma oportunidade de estágio ou vaga júnior onde eu
+                possa aprimorar meus conhecimentos na prática, contribuir com projetos reais e construir uma base sólida
+                na área de programação.
+
+                <br>
+                <br>
+                Passei dois anos na Austrália em intercâmbio, o que
+                fortaleceu minha fluência em inglês, autonomia e habilidades interpessoais.
+
+                Atualmente, estou em constante evolução por meio de cursos, projetos pessoais e desafios técnicos. Estou
+                comprometido com meu crescimento na área de tecnologia e pronto para agregar valor enquanto me
+                desenvolvo como profissional.
+            </p>
+        </div>
+    </section>
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo"> Meus Projetos </h2>
+        <div class="projetos-caixa">
+            
+
+            <div class="projetos-card">
+                <img src="./img/Refri-do-dev.png" alt="Projeto 3" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Refri do dev</h3>
+                    <p class="paragrafo-projetos"> Slideshow feito com HTML, CSS e JavaScript, que mostra sabores com
+                        fundo colorido e imagens animadas. Navegação simples pelos botões “próximo” e “anterior”
+                    </p>
+                </div>
+            </div>
+
+            
+
+            <div class="projetos-card">
+                <img src="./img/Menu.png" alt="Projeto 2" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Menu Lateral Interativo </h3>
+                    <p class="paragrafo-projetos"> Menu lateral interativo desenvolvido com HTML, CSS e JavaScript,
+                        que permite abrir e fechar o menu com transições suaves e um overlay de fundo para foco no
+                        conteúdo ativo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/cafe1.png" alt="Projeto 3" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Site institucional de cafeteria</h3>
+                    <p class="paragrafo-projetos"> HTML e CSS, com menu fixo,
+                        seções de apresentação, cardápio, avaliações e mapa de localização. Design responsivo e moderno
+                        para melhor experiência do usuário.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/spotify.png" alt="Projeto 3" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos"> Página do Spotify </h3>
+                    <p class="paragrafo-projetos"> HTML, CSS e
+                        JavaScript, com design responsivo, menu lateral, seções de artistas e álbuns populares, barra de
+                        busca e banner promocional.
+                    </p>
+                </div>
+            </div>
+
+            
+
+            <div class="projetos-card">
+                <img src="./img/ListadeTarefas.png" alt="Projeto 3" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Lista de Tarefas </h3>
+                    <p class="paragrafo-projetos"> HTML, CSS, JavaScript e React. Aplicação de Lista de tarefas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/login.png" alt="Projeto 1" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Tela de Login</h3>
+                    <p class="paragrafo-projetos"> Tela de login feita com HTML e CSS, com background aleatório que muda
+                        a cada acesso à página.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/mydolar.png" alt="Projeto 3" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos"> Conversor de Real para Dólar </h3>
+                    <p class="paragrafo-projetos"> HTML, CSS e JavaScript. O usuário insere o valor em reais e a cotação
+                        do dólar, e o sistema calcula o valor convertido. Interface simples, responsiva e com feedback
+                        visual via "alert( )".
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+    <section id="contatos" class="contatos">
+
+        <h2 class="contatos-titulo"> Entre em Contato </h2>
+
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar Whatsapp</button>
+        </form>
+    </section>
+
+    <script>
+        function enviarWhats(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById("nome").value;
+            const mensagem = document.getElementById("mensagem").value;
+            const telefone = '5599999999999'; // número fictício para demonstração
+
+            if (!nome || !mensagem) {
+                alert("Por favor, preencha todos os campos.");
+                return;
+            }
+
+            const texto = `Olá, Me chamo ${nome}. ${mensagem}`;
+            const mensagemFormatada = encodeURIComponent(texto);
+
+            const url = `https://wa.me/${telefone}?text=${mensagemFormatada}`;
+
+            console.log(url);
+
+            window.open(url, '_blank');
+        }
+
+
+
+    </script>
+
+
+</body>
+
+<section class="contato">
+    <div class="contato-links">
+        <div class="contato-item">
+            <a href="mailto:estevaoruroz1@gmail.com" target="_blank">
+                <img src="https://img.icons8.com/plasticine/100/new-post--v1.png" alt="new-post--v1" />
+                <span>estevaoruroz1@gmail.com</span>
+            </a>
+        </div>
+        <div class="contato-item">
+            <a href="https://github.com/estevaouroz" target="_blank">
+                <img src="https://img.icons8.com/ios-glyphs/90/github.png" alt="github" />
+                <span>github.com/estevaouroz</span>
+            </a>
+        </div>
+        <div class="contato-item">
+            <a href="https://www.linkedin.com/in/estevao-rodrigues-uroz-161942192/" target="_blank">
+                <img src="https://img.icons8.com/color/96/linkedin.png" alt="linkedin" />
+                <span>linkedin.com/in/estevao</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+</html>
