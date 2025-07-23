@@ -140,6 +140,9 @@ h1{
     backdrop-filter: blur(5px);
     border: 1px solid var(--vidro);
     overflow: hidden;
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .projetos-titulo{
@@ -321,4 +324,8 @@ h1{
 
 .contato-item span:hover {
     color: white;
+}
+
+.contato-item a:hover span {
+    color: white;                /* texto aparece no hover */
 }
